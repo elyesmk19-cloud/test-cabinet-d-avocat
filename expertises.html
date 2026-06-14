@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Domaines d'intervention du Cabinet Avocats — Droit de la famille, droit des affaires, droit administratif, droit pénal, droit du travail, conseil et prévention.">
+  <title>Expertises — Cabinet Avocats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════ -->
+<header>
+  <a href="index.html" class="logo">Cabinet Avocats</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<div class="menu-overlay" role="dialog" aria-modal="true" aria-label="Navigation principale">
+  <div class="overlay-header">
+    <a href="index.html" class="overlay-logo">Cabinet Avocats</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html"><span>Cabinet</span><span class="nav-num">01</span></a></li>
+      <li><a href="equipe.html"><span>Équipe</span><span class="nav-num">02</span></a></li>
+      <li><a href="expertises.html"><span>Expertises</span><span class="nav-num">03</span></a></li>
+      <li><a href="contact.html"><span>Contact</span><span class="nav-num">04</span></a></li>
+    </ul>
+  </nav>
+  <div class="overlay-footer">
+    <div class="lang-switch">
+      <span class="lang-btn active" data-lang="fr">FR</span>
+      &nbsp;/&nbsp;
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     EN-TÊTE DE PAGE
+     ══════════════════════════════════════ -->
+<header class="page-header">
+  <div class="container">
+    <span class="section-label" data-i18n="exp.header.label">Domaines d'intervention</span>
+    <h1 data-i18n-html="exp.header.h1">Un accompagnement sur<br>l'ensemble du spectre juridique</h1>
+    <p data-i18n="exp.header.p">
+      Du conseil préventif à la défense contentieuse, le cabinet intervient dans les principales disciplines
+      du droit, avec la même exigence quelle que soit la nature du litige.
+    </p>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════
+     GRILLE EXPERTISES
+     ══════════════════════════════════════ -->
+<section class="expertise-section">
+  <div class="container">
+    <div class="expertise-grid">
+
+      <!-- 1. Droit de la famille -->
+      <div class="expertise-card reveal">
+        <div class="expertise-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 16 L16 5 L28 16"/>
+            <path d="M7 14 L7 27 L25 27 L25 14"/>
+            <rect x="12" y="19" width="8" height="8"/>
+          </svg>
+        </div>
+        <h3 data-i18n="exp1.title">Droit de la famille</h3>
+        <p data-i18n="exp1.text">Divorce et séparation, garde d'enfants et droit de visite, règlement des successions et partage du patrimoine familial.</p>
+      </div>
+
+      <!-- 2. Droit des affaires -->
+      <div class="expertise-card reveal">
+        <div class="expertise-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="12" width="26" height="15"/>
+            <path d="M12 12 L12 9 Q12 7 14 7 L18 7 Q20 7 20 9 L20 12"/>
+            <line x1="3" y1="19.5" x2="29" y2="19.5"/>
+          </svg>
+        </div>
+        <h3 data-i18n="exp2.title">Droit des affaires</h3>
+        <p data-i18n="exp2.text">Rédaction et négociation de contrats commerciaux, constitution et gouvernance de sociétés, litiges entre associés et contentieux commercial.</p>
+      </div>
+
+      <!-- 3. Droit administratif & public -->
+      <div class="expertise-card reveal">
+        <div class="expertise-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="2"  y1="27" x2="30" y2="27"/>
+            <line x1="2"  y1="11" x2="30" y2="11"/>
+            <path d="M2 11 L16 4 L30 11"/>
+            <line x1="6"  y1="11" x2="6"  y2="27"/>
+            <line x1="12" y1="11" x2="12" y2="27"/>
+            <line x1="20" y1="11" x2="20" y2="27"/>
+            <line x1="26" y1="11" x2="26" y2="27"/>
+          </svg>
+        </div>
+        <h3 data-i18n="exp3.title">Droit administratif &amp; public</h3>
+        <p data-i18n="exp3.text">Recours devant les juridictions administratives, contentieux contre l'État et les collectivités, marchés publics et droit de l'urbanisme.</p>
+      </div>
+
+      <!-- 4. Droit pénal -->
+      <div class="expertise-card reveal">
+        <div class="expertise-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 5 L27 12 L23 16.5 L16 9.5 Z"/>
+            <line x1="19" y1="13" x2="7" y2="25"/>
+            <line x1="4"  y1="28" x2="16" y2="28"/>
+          </svg>
+        </div>
+        <h3 data-i18n="exp4.title">Droit pénal</h3>
+        <p data-i18n="exp4.text">Défense des personnes physiques et morales à tous les stades de la procédure pénale : garde à vue, instruction, jugement et appel.</p>
+      </div>
+
+      <!-- 5. Droit du travail -->
+      <div class="expertise-card reveal">
+        <div class="expertise-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="8" r="4"/>
+            <path d="M3 28 L3 19 Q3 14 11 14 Q16 14 18 17"/>
+            <circle cx="22" cy="11" r="3.5"/>
+            <path d="M18 28 L18 21 Q18 16 22 16 Q26 16 27.5 18.5"/>
+          </svg>
+        </div>
+        <h3 data-i18n="exp5.title">Droit du travail</h3>
+        <p data-i18n="exp5.text">Relations employeur–salarié, licenciements et ruptures contractuelles, litiges devant le tribunal, négociation d'accords collectifs.</p>
+      </div>
+
+      <!-- 6. Conseil & Prévention -->
+      <div class="expertise-card reveal">
+        <div class="expertise-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 4 L22 4 L26 8 L26 28 L7 28 Z"/>
+            <line x1="22" y1="4"  x2="22" y2="8"/>
+            <line x1="22" y1="8"  x2="26" y2="8"/>
+            <line x1="11" y1="13" x2="22" y2="13"/>
+            <line x1="11" y1="17" x2="22" y2="17"/>
+            <line x1="11" y1="21" x2="18" y2="21"/>
+          </svg>
+        </div>
+        <h3 data-i18n="exp6.title">Conseil &amp; Prévention</h3>
+        <p data-i18n="exp6.text">Audit juridique préventif, rédaction et sécurisation de contrats, accompagnement stratégique pour anticiper les risques contentieux.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <span class="footer-logo">Cabinet Avocats</span>
+        <p class="footer-tagline" data-i18n="footer.tagline">Cabinet d'avocats à Alger</p>
+      </div>
+
+      <div>
+        <p class="footer-col-title" data-i18n="footer.nav.title">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html"      data-i18n="nav.cabinet">Cabinet</a></li>
+          <li><a href="equipe.html"     data-i18n="nav.equipe">Équipe</a></li>
+          <li><a href="expertises.html" data-i18n="nav.expertises">Expertises</a></li>
+          <li><a href="contact.html"    data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title" data-i18n="footer.contact.title">Contact</p>
+        <div class="footer-contact-info">
+          <p>[Adresse — à compléter]</p>
+          <p>[+213 — à compléter]</p>
+          <p>[contact@cabinet — à compléter]</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="footer.copy">© 2025 Cabinet Avocats. Tous droits réservés.</span>
+      <span class="footer-confidential" data-i18n="footer.confidential">Toute consultation est soumise au secret professionnel.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

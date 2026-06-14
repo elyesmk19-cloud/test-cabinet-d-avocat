@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacter le Cabinet Avocats — Narimene Moukneche, Algérie.">
+  <title>Contact — Cabinet Avocats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════ -->
+<header>
+  <a href="index.html" class="logo">Cabinet Avocats</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<div class="menu-overlay" role="dialog" aria-modal="true" aria-label="Navigation principale">
+  <div class="overlay-header">
+    <a href="index.html" class="overlay-logo">Cabinet Avocats</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html"><span>Cabinet</span><span class="nav-num">01</span></a></li>
+      <li><a href="equipe.html"><span>Équipe</span><span class="nav-num">02</span></a></li>
+      <li><a href="expertises.html"><span>Expertises</span><span class="nav-num">03</span></a></li>
+      <li><a href="contact.html"><span>Contact</span><span class="nav-num">04</span></a></li>
+    </ul>
+  </nav>
+  <div class="overlay-footer">
+    <div class="lang-switch">
+      <span class="lang-btn active" data-lang="fr">FR</span>
+      &nbsp;/&nbsp;
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     EN-TÊTE DE PAGE
+     ══════════════════════════════════════ -->
+<header class="page-header">
+  <div class="container">
+    <span class="section-label" data-i18n="contact.header.label">Nous contacter</span>
+    <h1 data-i18n-html="contact.header.h1">Prenons le temps<br>d'étudier votre dossier</h1>
+    <p data-i18n="contact.header.p">
+      Décrivez brièvement votre situation. Nous reviendrons vers vous dans les meilleurs délais
+      pour convenir d'un premier rendez-vous.
+    </p>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════
+     SECTION CONTACT
+     ══════════════════════════════════════ -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- ─ Coordonnées ─ -->
+      <div class="contact-info reveal">
+        <span class="section-label" data-i18n="contact.info.label">Coordonnées</span>
+        <h2>Cabinet Avocats</h2>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label" data-i18n="contact.detail.adresse.label">Adresse</p>
+          <p>[Adresse — à compléter]<br>Algérie</p>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label" data-i18n="contact.detail.tel.label">Téléphone</p>
+          <p>[+213 — à compléter]</p>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label" data-i18n="contact.detail.email.label">Email</p>
+          <p>[contact@cabinet — à compléter]</p>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label" data-i18n="contact.detail.horaires.label">Horaires</p>
+          <p data-i18n="contact.detail.horaires.val">Dimanche – Jeudi : 9h – 17h</p>
+        </div>
+
+        <!-- Ornement Thémis -->
+        <div style="margin-top:3rem;" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#8B7355" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+            <!-- tête + bandeau -->
+            <circle cx="24" cy="8" r="5"/>
+            <line x1="18.5" y1="8.5" x2="29.5" y2="7.5"/>
+            <!-- robe -->
+            <path d="M20 13 L13 44 L35 44 L28 13"/>
+            <!-- épée (droite) -->
+            <line x1="37" y1="15" x2="37" y2="34"/>
+            <line x1="33.5" y1="23" x2="40.5" y2="23"/>
+            <path d="M36 34 L34 39 M38 34 L36 39"/>
+            <!-- balance (gauche) -->
+            <line x1="11" y1="15" x2="11" y2="24"/>
+            <line x1="4"  y1="19" x2="18" y2="19"/>
+            <line x1="4"  y1="19" x2="4"  y2="26"/>
+            <line x1="18" y1="19" x2="18" y2="26"/>
+            <path d="M1 26 Q4 31 7 26"/>
+            <path d="M15 26 Q18 31 21 26"/>
+          </svg>
+        </div>
+
+        <p class="contact-confidential" data-i18n="contact.confidential">
+          Toute consultation est soumise au secret professionnel.
+          Les informations transmises via ce formulaire sont strictement confidentielles.
+        </p>
+      </div>
+
+      <!-- ─ Formulaire ─ -->
+      <div class="contact-form-wrapper reveal">
+        <form id="contact-form" novalidate>
+          <div class="form-fields">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nom" data-i18n="form.nom.label">Nom complet</label>
+                <input type="text" id="nom" name="nom"
+                  data-i18n-placeholder="form.nom.placeholder"
+                  placeholder="Votre nom"
+                  autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="form.email.label">Adresse email</label>
+                <input type="email" id="email" name="email"
+                  data-i18n-placeholder="form.email.placeholder"
+                  placeholder="votre@email.com"
+                  autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="objet" data-i18n="form.objet.label">Objet</label>
+              <input type="text" id="objet" name="objet"
+                data-i18n-placeholder="form.objet.placeholder"
+                placeholder="Nature de votre demande" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message" data-i18n="form.message.label">Message</label>
+              <textarea id="message" name="message"
+                data-i18n-placeholder="form.message.placeholder"
+                placeholder="Décrivez brièvement votre situation…" required></textarea>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn-submit">
+                <span data-i18n="form.submit">Envoyer le message</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="2" y1="8" x2="14" y2="8"/>
+                  <polyline points="9,3 14,8 9,13"/>
+                </svg>
+              </button>
+              <span class="form-note" data-i18n="form.note">Réponse sous 48 h ouvrées</span>
+            </div>
+
+          </div>
+        </form>
+
+        <p class="form-success" id="form-success" role="alert" data-i18n="form.success">
+          Votre message a bien été transmis. Nous vous répondrons dans les meilleurs délais.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <span class="footer-logo">Cabinet Avocats</span>
+        <p class="footer-tagline" data-i18n="footer.tagline">Cabinet d'avocats à Alger</p>
+      </div>
+
+      <div>
+        <p class="footer-col-title" data-i18n="footer.nav.title">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html"      data-i18n="nav.cabinet">Cabinet</a></li>
+          <li><a href="equipe.html"     data-i18n="nav.equipe">Équipe</a></li>
+          <li><a href="expertises.html" data-i18n="nav.expertises">Expertises</a></li>
+          <li><a href="contact.html"    data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title" data-i18n="footer.contact.title">Contact</p>
+        <div class="footer-contact-info">
+          <p>[Adresse — à compléter]</p>
+          <p>[+213 — à compléter]</p>
+          <p>[contact@cabinet — à compléter]</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="footer.copy">© 2025 Cabinet Avocats. Tous droits réservés.</span>
+      <span class="footer-confidential" data-i18n="footer.confidential">Toute consultation est soumise au secret professionnel.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="nav.js"></script>
+<script>
+(function () {
+  var form       = document.getElementById('contact-form');
+  var successMsg = document.getElementById('form-success');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nom     = form.querySelector('#nom').value.trim();
+    var email   = form.querySelector('#email').value.trim();
+    var objet   = form.querySelector('#objet').value.trim();
+    var message = form.querySelector('#message').value.trim();
+    if (!nom || !email || !objet || !message) return;
+    form.style.display  = 'none';
+    successMsg.style.display = 'block';
+  });
+})();
+</script>
+</body>
+</html>
